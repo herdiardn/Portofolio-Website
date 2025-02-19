@@ -92,8 +92,7 @@ body {
   justify-content: space-between;
 }
 .hero {
-  height: 70vh;
-  padding: 8rem 7% 1.4rem;
+  padding: 12rem 7% 1.4rem;
 }
 .hero h5 span {
   color: white;
@@ -102,8 +101,6 @@ body {
 .hero h5 {
   color: #00bbfa;
   font-size: 2rem;
-  overflow: hidden;
-  border-right: 0.15em solid #00bbfa;
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: blink-caret 0.75s step-end infinite;
@@ -140,23 +137,10 @@ body {
 }
 
 .hero .gambar-sec-start {
-  margin-top: -4rem;
-  width: 500px;
-  height: 400px;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
   display: flex;
-  transform: translateX(0px);
-  animation: float 4s ease-out infinite;
-}
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 .first-icon {
@@ -237,6 +221,8 @@ body {
 }
 .btn-about {
   text-align: left;
+  display: flex;
+  gap: 10px;
 }
 .btn-about .cv {
   padding: 10px 20px;
@@ -253,7 +239,6 @@ body {
   color: white;
   font-weight: bold;
   transition: 0.3s;
-  margin-right: 20px;
 }
 
 .btn-about .cv:hover {
@@ -293,8 +278,8 @@ body {
   gap: 25px;
   color: white;
 }
-
-.display > div {
+.display > div,
+.display a {
   background-color: rgba(255, 255, 255, 0.104);
   padding: 40px 20px 20px 20px;
   text-align: center;
@@ -302,9 +287,11 @@ body {
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  color: white;
 }
 
-.display > div:hover {
+.display > div:hover,
+.display a:hover {
   transform: scale(1.05);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -327,7 +314,7 @@ body {
 /* Services Section */
 .Services {
   bottom: 100%;
-  padding: 0rem 7% 1.4rem;
+  padding: 8rem 7% 1.4rem;
   text-align: center;
   padding-bottom: 10rem;
   color: white;
@@ -343,10 +330,10 @@ body {
 
 .Services .content {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Membagi menjadi 5 kolom */
-  gap: 25px; /* Jarak antar elemen */
-  justify-items: center; /* Pusatkan elemen dalam grid */
-  text-align: center; /* Pusatkan teks */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+  text-align: center;
   color: white;
 }
 
@@ -652,19 +639,19 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.3);
   }
-
-  .hero .content img {
-    display: none;
+  .hero {
+    padding: 8rem 7% 1.4rem;
   }
-  .hero .content {
-    flex-wrap: wrap;
+  .hero .gambar-sec-start img {
+    margin: 30px 0px 0px 20px;
+    width: auto;
+    height: 250px;
   }
   .hero h1 {
     font-size: 5rem;
   }
   .hero .desk {
     font-size: 1.5rem;
-    padding-right: 20px;
     font-weight: 200;
   }
 
@@ -674,6 +661,17 @@ body {
     align-items: center;
     text-align: center;
   }
+
+  .btn-about .cv {
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  .btn-about .project {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
   .About .content .row {
     order: 1;
   }
@@ -682,7 +680,7 @@ body {
   }
 
   .About .content .gambar-about img {
-    max-width: 60%;
+    max-width: 100%;
     padding: 20px 0px;
     height: auto;
   }
@@ -693,7 +691,8 @@ body {
     align-items: center;
     text-align: center;
   }
-  .About .display div {
+  .About .display div,
+  a {
     width: 100%;
   }
 
@@ -709,8 +708,10 @@ body {
       width: calc(43% - 0.15em);
     }
   }
-  .Services .content {
-    flex-wrap: wrap;
+
+  .Services .content > div {
+    padding: 20px 0px;
+    width: 140px;
   }
   .Project .content {
     flex-wrap: wrap;
@@ -758,9 +759,8 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-
-    background-color: #00bbfa;
-    width: 30rem;
+    background-color: #252627;
+    width: 25rem;
     height: 100vh;
     transition: 0.5s;
   }
@@ -772,24 +772,20 @@ body {
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .navbar .navbar-nav a::after {
     transform-origin: 0 0;
   }
   .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.3);
+    transform: scaleX(0.25);
   }
-  .hero .content img {
-    margin-top: 10rem;
-    width: 300px;
-    height: 325px;
-  }
-  .hero .content {
-    flex-wrap: wrap;
-  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 4.2rem;
+  }
+  .hero h5 {
+    font-size: 1.8rem;
   }
   .Project .content {
     width: 100%;
