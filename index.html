@@ -40,6 +40,7 @@
         <a href="#home">Home</a>
         <a href="#About">About</a>
         <a href="#Services">Skills</a>
+        <a href="#Experience">Experience</a>
         <a href="#Project">Portofolio</a>
         <a href="#Contact">Contact</a>
       </div>
@@ -168,7 +169,7 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Services Secrton -->
+    <!-- Services Section -->
     <section id="Services" class="Services">
       <h2>My<span> Skills</span></h2>
       <br />
@@ -227,6 +228,9 @@
         </div>
       </main>
     </section>
+
+    <!-- Experience Section -->
+    <div id="experience-container"></div>
 
     <!-- Portofolio Section -->
     <section id="Project" class="Project">
@@ -680,6 +684,15 @@
           }
         });
       });
+    </script>
+    <!-- Script untuk import experience.html -->
+    <script>
+      fetch("experience.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("experience-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading experience:", error));
     </script>
   </body>
 </html>

@@ -174,7 +174,6 @@ body {
   padding: 8rem 7% 1.4rem;
   text-align: center;
   font-size: 1.5rem;
-  padding-bottom: 10rem;
 }
 #About .content {
   display: flex;
@@ -316,7 +315,6 @@ body {
   bottom: 100%;
   padding: 8rem 7% 1.4rem;
   text-align: center;
-  padding-bottom: 10rem;
   color: white;
   font-size: 2rem;
 }
@@ -362,6 +360,109 @@ body {
 
 .Services .content h5 {
   margin: 5px 0;
+}
+
+/* Experience Section */
+.Experience {
+  bottom: 100%;
+  padding: 8rem 7% 1.4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.Experience h2 span {
+  color: #00bbfa;
+}
+#Experience {
+  margin-top: 0px;
+}
+
+.contentExp {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.company-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.job {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.job span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.job h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: #00bbfa;
+}
+
+.job p {
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.job h4 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  border-top: 1px solid #333;
+  padding-top: 5px;
+  color: #00bbfa;
+  text-align: left;
+}
+
+.job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.job ul li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.job h5 strong {
+  color: #f5a623;
+}
+
+.job h5,
+.job h5 strong {
+  font-size: 1rem;
+}
+
+h4 + p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.job .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.job .tech-stack span {
+  background-color: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #ddd;
 }
 
 /* Project Section */
